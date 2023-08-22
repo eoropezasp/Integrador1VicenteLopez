@@ -1,14 +1,14 @@
-const toggleMenuElement = document.getElementById('toggle-menu');
-const mainMenuElement = document.getElementById('main-menu');
-const mainNavElement = document.getElementById('main-nav');
-// const mainsectionElement = document.getElementById('caminantes');
+// const toggleMenuElement = document.getElementById('toggle-menu');
+// const mainMenuElement = document.getElementById('main-menu');
+// const mainNavElement = document.getElementById('main-nav');
+// // const mainsectionElement = document.getElementById('caminantes');
 
 
-toggleMenuElement.addEventListener('click', () => {
-    mainNavElement.classList.toggle('main-nav--show');
-    mainMenuElement.classList.toggle('main-menu--show');
+// toggleMenuElement.addEventListener('click', () => {
+//     mainNavElement.classList.toggle('main-nav--show');
+//     mainMenuElement.classList.toggle('main-menu--show');
     
-});
+// });
 
 
 
@@ -27,3 +27,4 @@ toggleMenuElement.addEventListener('click', () => {
 //     }
 //   });
 // }
+
