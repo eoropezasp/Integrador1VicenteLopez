@@ -24,6 +24,10 @@ body {
     left:
 }
 
+.active, .toggle-menu:hover {
+    background-color: #555;
+  }
+
 .logo1 {
     display: none;
 }
@@ -81,7 +85,11 @@ img {
 }
 
 
-
+.content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}  
 
 
 
@@ -89,6 +97,9 @@ img {
 
 @media screen and (min-width:768px) {
 
+    .content{
+        max-height: max-content; 
+    }
 
     .main-menu {
         flex-direction: row;
