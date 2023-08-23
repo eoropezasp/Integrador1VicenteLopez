@@ -78,8 +78,8 @@ img {
 
 .caminantes {
     width: 100vw;
-    height: 150vh;
-    background-image: url('../recursos/caminantes.jpg');
+    height: 30vh;
+    background-image: url('../recursos/banner mountain.png');
     background-size: cover;
     background-repeat: no-repeat;
 
