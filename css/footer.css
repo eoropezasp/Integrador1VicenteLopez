@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +34,6 @@
 
 .contacto-datos h2 {
     font-size: clamp(1rem, 4vw, 2rem);
-    /* margin: 2rem 0rem 1rem 3rem; */
     background-color: green;
     padding: .5rem;
 }

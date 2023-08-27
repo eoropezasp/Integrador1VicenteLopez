@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
+
 
 :root {
     --color1: lightcoral;
@@ -17,35 +21,26 @@ img {
 
 
 .caminantes {
+    position: relative;
     border: 1px solid black;
     width: 100vw;
-
-    /* background-image: url('../recursos/banner mountain.png');
-    background-size: cover;
-    background-repeat: no-repeat; */
-
 }
 
-.caminantes div {}
+
 
 .caja-principal {
     position: absolute;
     text-align: center;
-    top: 14rem;
+    top: 10rem;
     right: 3rem;
     width: 14rem;
-
-    /* float: right;
-    margin-right: 10vw;
-    margin-top: 10rem; */
     color: white;
-
     animation-name: cambiarTamaño;
     animation-duration: 2s;
 }
 
 .caja-principal h2 {
-
+    padding: .5rem;
     font-size: 2rem;
     background-color: hsla(240, 82%, 52%, 0.469);
 }
@@ -81,6 +76,7 @@ img {
 
 .caja-texto p {
     padding: 0.5rem;
+    font-size: clamp(1.3rem, 4vw, 1.5rem);
 }
 
 .caja-texto .p2 {
@@ -111,6 +107,8 @@ img {
 
 .logo-circular p {
     padding: 1rem;
+    font-weight: 400;
+    font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
 .box-imagenes {
@@ -177,7 +175,6 @@ img {
     }
 
     .send1 {
-
         animation-name: aparecerlogo, aparecerLogoSenderista;
         animation-duration: 2s;
         animation-fill-mode: forwards;
@@ -201,9 +198,7 @@ img {
     /* -------video-------- */
     .container-video {
         width: 60%;
-
         margin: auto;
-
     }
 
     /* ---------------- */
