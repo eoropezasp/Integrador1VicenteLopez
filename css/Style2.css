@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: lightcoral;
+    --color2: #776969;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.caminantes {
+    border: 1px solid black;
+    width: 100vw;
+
+    /* background-image: url('../recursos/banner mountain.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+}
+
+.caminantes div {}
+
+.caja-principal {
+    position: absolute;
+    text-align: center;
+    top: 14rem;
+    right: 3rem;
+    width: 14rem;
+
+    /* float: right;
+    margin-right: 10vw;
+    margin-top: 10rem; */
+    color: white;
+
+    animation-name: cambiarTamaño;
+    animation-duration: 2s;
+}
+
+.caja-principal h2 {
+
+    font-size: 2rem;
+    background-color: hsla(240, 82%, 52%, 0.469);
+}
+
+.caja-principal p {
+    margin-top: 1rem;
+}
+
+@keyframes cambiarTamaño {
+
+    0% {
+        transform: scale(0.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.cont1 {
+    padding: 1rem 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.send1,
+.send2 {
+    display: none;
+}
+
+.caja-texto p {
+    padding: 0.5rem;
+}
+
+.caja-texto .p2 {
+    background-color: rgb(196, 149, 240);
+}
+
+/* ---------------------- */
+
+.box-img {
+    width: 100%;
+    height: 100%;
+    animation-name: aparecerLogoCircular;
+    animation-duration: 2s;
+}
+
+.box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.logo-circular {
+    margin: auto;
+    width: 15rem;
+    text-align: center;
+}
+
+.logo-circular p {
+    padding: 1rem;
+}
+
+.box-imagenes {
+    margin-bottom: 2rem;
+}
+
+/* ------------------- */
+
+.container-video {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.container-video h2 {
+    margin: 2rem 0;
+}
+
+.box-video {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.box-video iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* ------------------------- */
+
+
+
+
+
+
+/* ------------- */
+@media (min-width: 768px) {
+
+    .caminantes div {
+        height: 20rem;
+    }
+
+    .caminantes div img {
+        object-fit: cover;
+    }
+
+
+
+    .contenedor-textos {
+        width: 80%;
+        margin: auto;
+    }
+
+
+    .send1,
+    .send2 {
+        display: block;
+    }
+
+    .send1 {
+
+        animation-name: aparecerlogo, aparecerLogoSenderista;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    .send2 {
+        animation-name: aparecerlogo2, aparecerLogoSenderista;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    .box-imagenes {
+        padding: 0 15vw;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+
+    }
+
+    /* -------video-------- */
+    .container-video {
+        width: 60%;
+
+        margin: auto;
+
+    }
+
+    /* ---------------- */
+
+    @keyframes aparecerlogo {
+        0% {
+            transform: translateX(10%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+
+    }
+
+    @keyframes aparecerlogo2 {
+        0% {
+            transform: translateX(-10%);
+        }
+
+        100% {
+            transform: translateX(50%);
+        }
+
+    }
+
+
+
+}
+
+@media (min-width: 1200px) {
+
+    .contenedor-textos {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+
+
+
+@keyframes aparecerLogoCircular {
+
+    0% {
+        filter: opacity(.5);
+    }
+
+    100% {
+        filter: opacity(1);
+    }
+
+
+}
+
+@keyframes aparecerLogoSenderista {
+
+    0% {
+        filter: opacity(0);
+    }
+
+    100% {
+        filter: opacity(1);
+    }
+}
