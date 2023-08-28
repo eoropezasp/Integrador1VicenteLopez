@@ -33,13 +33,72 @@ img {
 
 /* ------------------ */
 
-h3{
+.textSombra{
     width: 80%;
     margin: auto;
     text-align: center;
     padding: 1rem;
     box-shadow: 5px 5px 15px gray;
 }
+
+.col1{
+    display: none;
+}
+
+/* ----------------------- */
+
+.box-img {
+    width: 100%;
+    height: 100%;
+  
+}
+
+.box-img img {
+    width: 50%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.logo-circular {
+    margin: auto;
+    width: 33%;
+    text-align: center;
+}
+
+.logo-circular p {
+    padding: 1rem;
+    font-weight: 400;
+    font-size: clamp(.2rem, 1vw, 1rem);
+}
+
+.box-imagenes {
+    margin-bottom: 2rem;
+}
+
+/* --------------------------- */
+
+
+
+
+
+@media (min-width: 576px) {
+
+ .col2{
+    margin: auto;
+ }
+
+ .box-imagenes {
+  
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+
+}
+  
+}
+
+
 
 
 
@@ -55,5 +114,14 @@ h3{
         object-fit: cover;
     }
 
+    .col1{
+        display: block;
+    }
+    .col2{
+        margin: 0;
+     }
+     .row{
+        justify-content: center;
+     }
   
 }
