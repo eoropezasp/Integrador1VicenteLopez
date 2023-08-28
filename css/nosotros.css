@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+    --color1: lightcoral;
+    --color2: #776969;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.caminantes2 {
+    position: relative;
+    width: 100vw;
+}
+
+.caja-secundaria {
+    position: absolute;
+    text-align: center;
+    top: 7rem;
+    left: 1rem;
+    width: 60vw;
+    color: white;
+    animation-name: cambiarTamaño;
+    animation-duration: 2s;
+}
+
+.caja-secundaria h2 {
+    color: #776969;
+    padding: .5rem;
+    font-size: clamp(1rem,5vw,3rem);
+    
+}
+
+.caja-secundaria p {
+    margin-top: 1rem;
+    background-color: hsla(240, 82%, 52%, 0.469);
+}
+
+@keyframes cambiarTamaño {
+
+    0% {
+        transform: scale(0.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ---------------------- */
+
+
+.tituloDeTextos{
+    text-align: center;
+    margin: 2vw;
+}
+
+.texto {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    
+}
+
+.tituloMovil {
+    background: green;
+    color: white;
+    padding: .5rem 2rem;
+    animation-name: moverTitulo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+@keyframes moverTitulo {
+
+    0% {
+        transform: translateX(-400%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.textoConLogos{
+    display: flex;
+}
+
+.cajaTextoSinLogo{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.tituloLogo{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------- */
+@media (min-width: 768px) {
+
+    .caminantes2 div {
+        height: 20rem;
+    }
+
+    .caminantes2 div img {
+        object-fit: cover;
+    }
+
+    .box-textos {
+        padding: 0 10vw;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+
+    }
+
+    .texto {
+        width: 23vw;
+    }
+  
+   .cajaTextoSinLogo{
+    width: 23vw;
+    margin: 0 3rem;
+   }
+
+   .tituloLogo{
+    display: block;
+    width: 10rem;
+    
+}
+
+}

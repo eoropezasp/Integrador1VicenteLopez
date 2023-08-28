@@ -8,7 +8,8 @@ header.innerHTML = `
 <div class="encabezado"></div>
 
 <div class="logo">
-    <img src="./recursos/logo.png" alt="">
+<a href="index.html"><img src="./recursos/logo.png" alt=""></a>
+    
 </div>
 
 <div class="toggle-menu" id="toggle-menu">
@@ -18,7 +19,7 @@ header.innerHTML = `
 <nav class="main-nav" id="main-nav">
     <ul class="main-menu" id="main-menu">
         <li class="main-menu__item">
-            <a href="#" class="main-menu__link">QUIENES SOMOS</a>
+            <a href="./nosotros.html" class="main-menu__link">QUIENES SOMOS</a>
         </li>
         <li class="main-menu__item">
             <a href="#" class="main-menu__link">PROYECTO</a>
