@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+    --color1: lightcoral;
+    --color2: #776969;
+/* ---------------- */
+   
+
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.caminantes2 {
+    position: relative;
+    width: 100vw;
+}
+
+.col1 {
+    display: none;
+}
+/* ------------------------- */
+
+#contentCarrusel{
+    margin: auto;
+    max-width: 80vw;
+    height: 200px;
+    overflow: hidden;
+}
+
+
+
+
+.itemCarrusel{
+    height: 200px;
+    position: relative;
+}
+
+.tarjetaCarusel{
+    /* background-color: aqua; */
+    height: 100%;
+}
+
+.flechasCarrusel{
+   
+    
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+#tarjeta1{
+    /* background-color: blueviolet; */
+}
+
+
+#tarjeta2{
+    /* background-color: rgb(43, 226, 159); */
+}
+
+
+#tarjeta3{
+    /* background-color: rgb(177, 226, 43); */
+}
+
+
+a{
+    text-decoration: none;
+}
+
+#contentPuntos{
+    display: flex;
+    justify-content: center;
+}
+
+#contentPuntos a {
+    font-size: 2rem;
+    font-style: none;
+    margin: 0 2rem;
+}
+
+
+
+
+@media (min-width: 576px) {
+
+
+
+.col1{
+    display: block;
+}
+.manos{
+    width: 25%;
+}
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    .caminantes2 div {
+        height: 20rem;
+    }
+
+    .caminantes2 div img {
+        object-fit: cover;
+    }
+
+    #contentCarrusel{
+        
+        max-width: 50vw;
+      
+        
+    }
+
+}
