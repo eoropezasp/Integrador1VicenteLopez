@@ -22,7 +22,7 @@ header.innerHTML = `
             <a href="./nosotros.html" class="main-menu__link">QUIENES SOMOS</a>
         </li>
         <li class="main-menu__item">
-            <a href="#" class="main-menu__link">PROYECTO</a>
+            <a href="./proyecto.html" class="main-menu__link">PROYECTO</a>
         </li>
         <li class="main-menu__item">
             <a href="#" class="main-menu__link">ACTIVIDADES</a>

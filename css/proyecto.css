@@ -27,15 +27,21 @@ img {
 /* ---------------- */
 
 .sec-textos{
-    width: 90%;
-    margin: 2rem auto;
+    text-align: left;
+    width: 100%;
+    margin: 4rem auto 0;
 }
+.sec-textos div h2{
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
 
 /* ------------------ */
 
 .textSombra{
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    margin: 3rem auto;
     text-align: center;
     padding: 1rem;
     box-shadow: 5px 5px 15px gray;
@@ -44,6 +50,36 @@ img {
 .col1{
     display: none;
 }
+
+.manos{
+    animation-name: apareverImagen;
+    animation-duration: 1s;
+}
+
+@keyframes apareverImagen {
+    0% {
+        transform: translateY(200%);
+        filter: opacity(.5);
+    }
+
+    100% {
+        transform: translateY(0);
+        filter: opacity(1);
+    }
+
+}
+
+/* -------------------- */
+
+.objetivos{
+    text-align: left;
+}
+
+.objetivos h3{
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
 
 /* ----------------------- */
 
@@ -61,14 +97,18 @@ img {
 
 .logo-circular {
     margin: auto;
+
+    
     width: 33%;
     text-align: center;
+    align-items: center;
 }
 
 .logo-circular p {
-    padding: 1rem;
+    
+    /* padding: 1rem 0; */
     font-weight: 400;
-    font-size: clamp(.2rem, 1vw, 1rem);
+    font-size: clamp(1.2rem, 2vw, 3rem);
 }
 
 .box-imagenes {
@@ -77,7 +117,15 @@ img {
 
 /* --------------------------- */
 
+.p-final{
+    
+    text-align: left;
+    
+}
 
+p{
+    font-size: clamp(1rem,1.1vw,2rem);
+}
 
 
 
@@ -123,5 +171,14 @@ img {
      .row{
         justify-content: center;
      }
+
+     .box-imagenes{
+        padding-top: 5vh;
+     }
+     .p-final{
+        margin-top: 1.5rem;
+        text-align: left;
+        
+    }
   
 }

@@ -198,6 +198,7 @@ img {
     .container-video {
         width: 60%;
         margin: auto;
+        margin-bottom: 3rem;
     }
 
     /* ---------------- */
