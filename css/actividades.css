@@ -11,8 +11,8 @@
 :root {
     --color1: lightcoral;
     --color2: #776969;
-/* ---------------- */
-   
+    /* ---------------- */
+
 
 
 }
@@ -28,74 +28,14 @@ img {
     width: 100vw;
 }
 
-.col1 {
+.manos{
     display: none;
 }
+
+
 /* ------------------------- */
 
-#contentCarrusel{
-    margin: auto;
-    max-width: 80vw;
-    height: 200px;
-    overflow: hidden;
-}
 
-
-
-
-.itemCarrusel{
-    height: 200px;
-    position: relative;
-}
-
-.tarjetaCarusel{
-    /* background-color: aqua; */
-    height: 100%;
-}
-
-.flechasCarrusel{
-   
-    
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-
-#tarjeta1{
-    /* background-color: blueviolet; */
-}
-
-
-#tarjeta2{
-    /* background-color: rgb(43, 226, 159); */
-}
-
-
-#tarjeta3{
-    /* background-color: rgb(177, 226, 43); */
-}
-
-
-a{
-    text-decoration: none;
-}
-
-#contentPuntos{
-    display: flex;
-    justify-content: center;
-}
-
-#contentPuntos a {
-    font-size: 2rem;
-    font-style: none;
-    margin: 0 2rem;
-}
 
 
 
@@ -103,13 +43,6 @@ a{
 @media (min-width: 576px) {
 
 
-
-.col1{
-    display: block;
-}
-.manos{
-    width: 25%;
-}
 }
 
 
@@ -125,11 +58,6 @@ a{
         object-fit: cover;
     }
 
-    #contentCarrusel{
-        
-        max-width: 50vw;
-      
-        
-    }
+   
 
 }
