@@ -26,10 +26,53 @@ img {
 .caminantes2 {
     position: relative;
     width: 100vw;
+    margin-bottom: 1rem;
 }
 
-.manos{
+
+
+.actividad-1 {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.actividad-1 div {
+    padding: 0 1rem;
+}
+
+.manos {
+    max-width: 250px;
+    max-height: 300px;
     display: none;
+}
+
+.manos img {
+    min-width: 200px;
+    min-height: 250px;
+    max-width: 250px;
+
+}
+
+.objetivos h3,
+h2 {
+    font-size: clamp(2rem, 4vw, 2rem);
+
+}
+
+.objetivos h2 {
+
+    padding: .5rem 0;
+    color: white;
+    background-color: cornflowerblue;
+    width: max-content;
+
+
+}
+
+.objetivos p {
+    font-size: clamp(1rem, .5vw, 2rem);
 }
 
 
@@ -41,6 +84,17 @@ img {
 
 
 @media (min-width: 576px) {
+
+    .manos {
+        display: block;
+        animation-name: aparecerActividad;
+        animation-duration: 2s;
+    }
+
+
+
+
+
 
 
 }
@@ -58,6 +112,24 @@ img {
         object-fit: cover;
     }
 
-   
+    .actividad-1 {
 
+        max-width: 70%;
+
+
+    }
+
+
+}
+
+
+@keyframes aparecerActividad {
+
+    0% {
+        filter: opacity(0);
+    }
+
+    100% {
+        filter: opacity(1);
+    }
 }
