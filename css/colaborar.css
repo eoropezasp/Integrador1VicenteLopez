@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+    --color1: lightcoral;
+    --color2: #776969;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.caminantes2 {
+    position: relative;
+    width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+/* inicio de carrusel */
+.cont-carrusel {
+    position: relative;
+    max-width: ;
+}
+
+#carouselExampleSlidesOnly img {
+    height: 600px;
+}
+
+.cont-carrusel img {
+    filter: brightness(50%);
+}
+
+/* fin de carrusel */
+
+
+
+
+/* inicio de cuadro sobre carrusel */
+#cont-texto {
+    position: absolute;
+    top: 30%;
+    right: 1%;
+    width: 500px;
+    height: 300px;
+    text-align: right;
+    color: white;
+    font-size: clamp(.9rem, 1vw, 2rem);
+
+}
+
+.eje {
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+
+
+.botones-superiores button {
+
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.btn {
+    color: white;
+    border-color: gray;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+    border-color: gray;
+}
+
+#bt2:hover {
+    background-color: #29a744;
+    border-color: gray;
+}
+
+/* fin de cuadro sobre carrusel */
+
+/* inicio de articulos */
+
+.presentacion {
+    width: 20%;
+    text-align: center;
+    margin: auto;
+}
+
+.p1 {
+    margin-bottom: 1px;
+    font-size: 1.2em;
+}
+
+.p2 {
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+.oradores {
+    width: 100%;
+    margin: auto;
+
+   
+}
+
+.oradores article {
+    width: 70%;
+    border: 1px solid rgb(224, 216, 216);
+    border-radius: 5px;
+    margin: 1rem auto;
+}
+
+.oradores article img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px 5px 0 0;
+}
+
+.oradores article p {
+    margin: auto;
+    width: 90%;
+}
+
+.especialidad {
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.especialidad p span {
+    padding: 5px;
+}
+
+
+
+.etiq1 {
+    background-color: rgb(252, 235, 4);
+    border-radius: 5px;
+
+}
+
+.etiq2 {
+    background-color: rgb(56, 197, 240);
+    color: white;
+    border-radius: 5px;
+    margin-left: 7px;
+}
+
+
+.etiq3 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#color-invertido1 {
+    color: white;
+    background-color: #6d767d;
+    border-radius: 5px;
+}
+
+#color-invertido2 {
+    background-color: #dc3546;
+    color: white;
+    border-radius: 5px;
+    margin-left: 7px;
+
+}
+
+article div p {
+    font-weight: bold;
+    
+}
+
+/* fin de articulos */
+
+/* Inicio de descripcion de ciudad */
+
+.contenedor-ciudad {
+    width: 100%;
+    display: flex;
+    margin: 40px 0 20px;
+}
+
+.contenedor-ciudad div {
+    width: 50%;
+}
+
+.imagen-ciudad img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.texto-ciudad {
+    background-color: #333a40;
+    padding: 20px;
+    color: white;
+}
+
+#p-ciudad {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Fin descripcion de ciudad */
+
+
+/* form inicio */
+
+.formulario {
+
+    margin: 2rem auto;
+    width: 600px;
+    text-align: center;
+    font-size: 15px;
+    padding: 0 1rem;
+}
+
+.formulario>p {
+    margin: 4px;
+}
+
+#orador {
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.punteado {
+    text-decoration: underline dotted;
+}
+
+.datosPersonales {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+
+.datosPersonales>input {
+    width: 49%;
+    padding: 0 10px;
+}
+
+.tamañoTextArea {
+    height: 6em;
+    width: 100%;
+    margin: 0;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.tamañoTextArea:focus,
+#nombre,
+#apellido {
+    outline: none;
+}
+
+
+
+#text-area {
+    text-align: left;
+    font-size: 12px;
+    margin: 0;
+}
+
+#botonEnviar {
+    width: 100%;
+    background-color: #21be43;
+    margin-top: 20px;
+}
+
+#botonEnviar:hover {
+    background-color: #29a744;
+    border-color: gray;
+}
+
+
+
+/* fin de formulario */
+
+
+@media (min-width: 768px) {
+
+    .caminantes2 div {
+        height: 20rem;
+    }
+
+    .caminantes2 div img {
+        object-fit: cover;
+    }
+
+
+    #cont-texto {
+       
+        top: 30%;
+        right: 23%;
+    }
+
+    .oradores{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .oradores article{
+        width: 25%;
+    
+    }
+}

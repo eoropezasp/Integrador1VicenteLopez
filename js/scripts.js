@@ -28,7 +28,7 @@ header.innerHTML = `
             <a href="./actividades.html" class="main-menu__link">ACTIVIDADES</a>
         </li>
         <li class="main-menu__item">
-            <a href="#" class="main-menu__link">COLABORAR</a>
+            <a href="./colaborar.html" class="main-menu__link">COLABORAR</a>
         </li>
         <li class="main-menu__item">
             <a href="./inscripciones.html" class="main-menu__link">INSCRIPCIONES</a>

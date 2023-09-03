@@ -19,6 +19,12 @@ img {
     object-fit: contain;
 }
 
+
+.caminantes2 {
+    position: relative;
+    width: 100vw;
+}
+
 .container-inscripciones{
     margin: 2rem 0;
 }
@@ -66,4 +72,17 @@ h1{
 
 .logo-form{
     width: 20%;
+}
+
+
+
+@media (min-width: 768px) {
+
+    .caminantes2 div {
+        height: 20rem;
+    }
+
+    .caminantes2 div img {
+        object-fit: cover;
+    }
 }
