@@ -36,7 +36,6 @@ img {
 /* inicio de carrusel */
 .cont-carrusel {
     position: relative;
-    max-width: ;
 }
 
 #carouselExampleSlidesOnly img {
@@ -124,7 +123,7 @@ img {
     width: 100%;
     margin: auto;
 
-   
+
 }
 
 .oradores article {
@@ -192,7 +191,7 @@ img {
 
 article div p {
     font-weight: bold;
-    
+
 }
 
 /* fin de articulos */
@@ -318,18 +317,18 @@ article div p {
 
 
     #cont-texto {
-       
+
         top: 30%;
         right: 23%;
     }
 
-    .oradores{
+    .oradores {
         display: flex;
         justify-content: space-evenly;
     }
 
-    .oradores article{
+    .oradores article {
         width: 25%;
-    
+
     }
 }
