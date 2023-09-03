@@ -31,7 +31,7 @@ header.innerHTML = `
             <a href="#" class="main-menu__link">COLABORAR</a>
         </li>
         <li class="main-menu__item">
-            <a href="#" class="main-menu__link">INSCRIPCIONES</a>
+            <a href="./inscripciones.html" class="main-menu__link">INSCRIPCIONES</a>
         </li>
         <li class="main-menu__item">
             <a href="#" class="main-menu__link"><i class="fa-brands fa-instagram fa-2xl"
