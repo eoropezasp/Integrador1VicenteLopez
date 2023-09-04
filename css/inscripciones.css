@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+    --color1: lightcoral;
+    --color2: #776969;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.caminantes2 {
+    position: relative;
+    width: 100vw;
+}
+
+.container-inscripciones{
+    margin: 2rem 0;
+}
+
+h1{
+    text-align: center;
+    color: darkgreen;
+}
+.requisitos{
+    margin: 1rem;
+}
+.requisitos p{
+    display: flex;
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid gray;
+}
+
+.incripcion-img{
+    max-width: 70%;
+    margin-left: 1rem;
+}
+
+.requisitos p:hover{
+    background-color: blue;
+    color: white;
+}
+
+.requisitos p{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.cont-texto{
+    display: flex;
+    align-items: center;
+}
+
+.texto-form{
+    width: 80%;
+}
+
+.texto-form p{
+    font-size: clamp(1.1rem, 1.5vw, 2rem);
+}
+
+.logo-form{
+    width: 20%;
+}
+
+
+
+@media (min-width: 768px) {
+
+    .caminantes2 div {
+        height: 20rem;
+    }
+
+    .caminantes2 div img {
+        object-fit: cover;
+    }
+}

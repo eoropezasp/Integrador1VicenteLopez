@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+    --color1: lightcoral;
+    --color2: #776969;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.caminantes2 {
+    position: relative;
+    width: 100vw;
+}
+/* ---------------- */
+
+.sec-textos{
+    text-align: left;
+    width: 100%;
+    margin: 4rem auto 0;
+}
+.sec-textos div h2{
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+
+/* ------------------ */
+
+.textSombra{
+    width: 100%;
+    margin: 3rem auto;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 5px 5px 15px gray;
+}
+
+.col1{
+    display: none;
+}
+
+.manos{
+    animation-name: apareverImagen;
+    animation-duration: 1s;
+}
+
+@keyframes apareverImagen {
+    0% {
+        transform: translateY(200%);
+        filter: opacity(.5);
+    }
+
+    100% {
+        transform: translateY(0);
+        filter: opacity(1);
+    }
+
+}
+
+/* -------------------- */
+
+.objetivos{
+    text-align: left;
+}
+
+.objetivos h3{
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+
+/* ----------------------- */
+
+.box-img {
+    width: 100%;
+    height: 100%;
+  
+}
+
+.box-img img {
+    width: 50%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.logo-circular {
+    margin: auto;
+
+    
+    width: 33%;
+    text-align: center;
+    align-items: center;
+}
+
+.logo-circular p {
+    
+    /* padding: 1rem 0; */
+    font-weight: 400;
+    font-size: clamp(1.2rem, 2vw, 3rem);
+}
+
+.box-imagenes {
+    margin-bottom: 2rem;
+}
+
+/* --------------------------- */
+
+.p-final{
+    
+    text-align: left;
+    
+}
+
+p{
+    font-size: clamp(1rem,1.1vw,2rem);
+}
+
+
+
+@media (min-width: 576px) {
+
+ .col2{
+    margin: auto;
+ }
+
+ .box-imagenes {
+  
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+
+}
+  
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+    .caminantes2 div {
+        height: 20rem;
+    }
+
+    .caminantes2 div img {
+        object-fit: cover;
+    }
+
+    .col1{
+        display: block;
+    }
+    .col2{
+        margin: 0;
+     }
+     .row{
+        justify-content: center;
+     }
+
+     .box-imagenes{
+        padding-top: 5vh;
+     }
+     .p-final{
+        margin-top: 1.5rem;
+        text-align: left;
+        
+    }
+  
+}
