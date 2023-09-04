@@ -185,6 +185,7 @@ img {
         animation-fill-mode: forwards;
     }
 
+
     .box-imagenes {
         padding: 0 15vw;
         display: flex;
@@ -193,6 +194,9 @@ img {
         gap: 1.25rem;
 
     }
+
+
+
 
     /* -------video-------- */
     .container-video {
