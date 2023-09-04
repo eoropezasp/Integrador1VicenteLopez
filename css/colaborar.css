@@ -20,6 +20,22 @@ img {
 }
 
 
+body{
+    width: 100%;
+			height: 100vh;
+			color: #fff;
+			background: linear-gradient(45deg,rgb(35, 172, 222),blue,rgb(147, 36, 212),rgb(223, 8, 155));
+			background-size: 400% 400%;
+			position: relative;
+			animation: cambiar 15s ease-in-out infinite;
+}
+
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
 .caminantes2 {
     position: relative;
     width: 100vw;
@@ -231,16 +247,16 @@ article div p {
 
 /* form inicio */
 
-.formulario {
+.formulario-4 {
 
     margin: 2rem auto;
-    width: 600px;
+    width: 90%;
     text-align: center;
     font-size: 15px;
     padding: 0 1rem;
 }
 
-.formulario>p {
+.formulario-4>p {
     margin: 4px;
 }
 
@@ -330,5 +346,8 @@ article div p {
     .oradores article {
         width: 25%;
 
+    }
+    .formulario-4{
+        width: 50%;
     }
 }
